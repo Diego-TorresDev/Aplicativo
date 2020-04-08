@@ -21,7 +21,7 @@
 
 			<div>
 				<input type="password" name="password2" class="password_btn" placeholder="Confirmar Contraseña"><br><br>
-				<button class="btn btn-primary" type="button" onclick="login.submit()">Registrate</button>
+				<button style="margin-left: 13%;" class="btn btn-primary" type="button" onclick="login.submit()">Registrate</button>
 
 			</div>
 
@@ -36,9 +36,11 @@
 			<?php endif; ?>
 		</form>
 
-		<p>
+		<p style="margin-left: 8%;">
 			¿Ya tienes cuenta? <br>
-			<a href="login.php">Iniciar Secion</a>
+			</p>
+			<p style="margin-left: 13%;">
+			<a href="login.php">Iniciar Sesión</a>
 		</p>
 	</div>
 </div>

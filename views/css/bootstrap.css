@@ -5275,8 +5275,10 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .alert-heading {
   color: inherit;
-}
 
+}
+.errori{
+}
 .alert-link {
   font-weight: 700;
 }

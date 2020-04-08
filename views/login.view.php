@@ -2,40 +2,43 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Iniciar Sesion</title>
+	<title>Alianza Maquila</title>
 	<link rel="stylesheet" type="text/css" href="views/css/bootstrap.css">
 </head>
 <body>
-	<div class="card" style="margin-left: 30%; margin-right: 30%; margin-top: 15%;">
-		<div class="padding" style="padding-left: 35%;">
-		<h1 class="titulo">Iniciar Sesion</h1>
+	<div class="card" style="margin-left: 35%; margin-right: 30%; margin-top: 15%;">
+		<h1 style="padding-left:20%;">Alianza Maquila</h1>
 
 		<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="formulario" name="login">
-			<div>
+			<div  style="margin-left: 30%; margin-top: 5%">
 				<input type="text" name="usuario" class="usuario" placeholder="Usuario">
 			</div>
 
-			<div>
+			<div style="margin-left: 30%;">
 				<input type="password" name="password" class="password_btn" placeholder="Contraseña"><br><br>
-				<button class="btn btn-primary" type="button" onclick="login.submit()">Iniciar Sesion</button>
+				<button style="margin-left: 10%;" class="btn btn-primary" type="button" onclick="login.submit()">Iniciar Sesion</button>
 			</div>
 
 <!--Mensaje de error -->
-			<?php if(!empty($errores)): ?>
+			
+			
+		</form>
+
+		<p style="margin-left: 33%;">
+			¿Aun no tienes cuenta? <br>
+		</p>
+			<a style="margin-left: 43%;" href="registrate.php">Registrate</a>
+		</p>
+		<div class="errori">
+<?php if(!empty($errores)): ?>
 				<div>
 					<ul>
 						<?php echo $errores; ?>
 					</ul>
 				</div>
 			<?php endif; ?>
-			
-		</form>
-
-		<p>
-			¿Aun no tienes cuenta? <br>
-			<a href="registrate.php">Registrate</a>
-		</p>
-	</div>
+		</div>
 </div>
+	</div>
 </body>
 </html>
